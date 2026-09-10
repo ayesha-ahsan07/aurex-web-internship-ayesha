@@ -1,0 +1,228 @@
+/* ==== AYESHA AHSAN - AUREX WEEK 2 PORTFOLIO=== */
+/* === BASIC RESET & CSS FUNDAMENTALS==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+/* === CONTAINER - CLASS SELECTOR=== */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*=== HEADER=== */
+header {
+    position: relative;
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    min-height: 200px;
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 17px;
+}
+/* === NAVIGATION - FLEXBOX=== */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #172b5c;
+    padding: 15px 20px;
+}
+nav a {
+    width: 100%;
+    max-width: 250px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #3155a4;
+}
+/* === MAIN AREA - BOX MODEL=== */
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+/* === SECTIONS - UI/UX & BOX MODEL=== */
+section {
+    background-color: white;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+section h2 {
+    color: #1f3c88;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1f3c88;
+}
+section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* ===  SKILLS - CSS GRID
+   Rows + Columns + Gap === */
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    list-style: none;
+}
+#skills li {
+    background-color: #eef3ff;
+    border: 1px solid #cbd8f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* === EDUCATION=== */
+article {
+    padding: 20px;
+    background-color: #f4f7fb;
+    border-left: 5px solid #1f3c88;
+    border-radius: 5px;
+}
+article h3 {
+    color: #1f3c88;
+    margin-bottom: 8px;
+}
+/* ===CONTACT FORM - FLEXBOX===*/
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+label {
+    font-weight: bold;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+input:focus,
+textarea:focus {
+    outline: 2px solid #1f3c88;
+}
+/* === BUTTON=== */
+button {
+    width: 100%;
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #172b5c;
+}
+/* ===FOOTER - POSITIONING=== */
+footer {
+    position: relative;
+    background-color: #172b5c;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 20px;
+}
+/* ===TABLET - MIN WIDTH 768px==== */
+@media (min-width: 768px) {
+    header {
+        padding: 55px 20px;
+    }
+    header h1 {
+        font-size: 38px;
+    }
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    nav a {
+        width: auto;
+    }
+    main {
+        padding: 30px 20px;
+    }
+    section {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+    section h2 {
+        font-size: 27px;
+    }
+    #skills ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    button {
+        width: auto;
+    }
+}
+/* ===DESKTOP - MIN WIDTH 1024p=== */
+@media (min-width: 1024px) {
+    header {
+        padding: 60px 20px;
+    }
+    header h1 {
+        font-size: 42px;
+    }
+    header p {
+        font-size: 19px;
+    }
+    nav {
+        gap: 25px;
+    }
+    #skills ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    section {
+        padding: 35px;
+    }
+}
