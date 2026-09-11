@@ -66,7 +66,7 @@ I solved this by using Flexbox, CSS Grid, media queries,
 and appropriate spacing.
 ## Live Deployment Link
 
-**Live URL:** Add GitHub Pages URL here.
+**Live URL:** https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
 
 ---
 
