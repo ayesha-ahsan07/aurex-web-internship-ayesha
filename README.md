@@ -65,8 +65,10 @@ transitions, and keyframe animations.
 **Live URL:**https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
 ## Screenshots
 ### Desktop View
-![Desktop View](screenshots/desktop.png)
+![Week 3 Desktop View](screenshots/Week 3-Desktop View.png)
 ### Tablet View
-![Tablet View](screenshots/tablet.png)
+![Week 3 Tablet View](screenshots/Week 3-Tablet View.png)
 ### Mobile View
-![Mobile View](screenshots/mobile.png)
+![Week 3 Mobile View](screenshots/Week 3-Mobile View.png)
+### Hover Animation
+![Week 3 Hover Animation](screenshots/Week 3-Hover Animation.gif)
