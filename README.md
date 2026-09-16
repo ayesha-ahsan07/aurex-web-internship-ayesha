@@ -63,12 +63,4 @@ variables, media queries, `auto-fit`, `minmax()`, `clamp()`,
 transitions, and keyframe animations.
 ## Live Deployment Link
 **Live URL:**https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
-## Screenshots
-### Desktop View
-![Week 3 Desktop View](screenshots/Week 3-Desktop View.png)
-### Tablet View
-![Week 3 Tablet View](screenshots/Week 3-Tablet View.png)
-### Mobile View
-![Week 3 Mobile View](screenshots/Week 3-Mobile View.png)
-### Hover Animation
-![Week 3 Hover Animation](screenshots/Week 3-Hover Animation.gif)
+
