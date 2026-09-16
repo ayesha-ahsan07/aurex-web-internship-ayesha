@@ -62,7 +62,7 @@ I solved these challenges by using CSS Grid, Flexbox, CSS
 variables, media queries, `auto-fit`, `minmax()`, `clamp()`,
 transitions, and keyframe animations.
 ## Live Deployment Link
-**Live URL:** https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
+**Live URL:**https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
 ## Screenshots
 ### Desktop View
 ![Desktop View](screenshots/desktop.png)
