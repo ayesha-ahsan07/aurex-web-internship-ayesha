@@ -1,307 +1,199 @@
-/* ==== AYESHA AHSAN - AUREX WEEK 3 PORTFOLIO ==== */
-
-/* === CSS VARIABLES === */
 :root {
-    --primary-color: #1f3c88;
-    --secondary-color: #172b5c;
-    --background-color: #f4f7fb;
-    --accent-color: #ffffff;
-    --text-color: #222;
+    --primary: #1f3c88;
+    --primary-dark: #172b5c;
+    --background: #f4f7fb;
     --white: #ffffff;
-    /* Additional UI Colors */
-    --section-background:#ffffff;
-    --skill-background:gray;
-    --border-color:black;
-    --input-border: #BBBBBB;
-    --glass-background: rgba(255, 255, 255, 0.75);
-    --glass-border: black;
-    --shadow-color: #1f3c88;
+    --text: #222;
+    --border: #ccc;
+    --success: #2e7d32;
+    --warning: #f9a825;
+    --danger: #c62828;
+    --shadow: rgba(31, 60, 136, 0.12);
+    --task-shadow: rgba(31, 60, 136, 0.10);
 }
-/*BASIC RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-}
-/* BODY */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
 }
-/*CONTAINER */
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* HEADER*/
-header {
-    position: relative;
-    background-color: var(--primary-color);
+.header {
+    background-color: var(--primary);
     color: var(--white);
     text-align: center;
-    padding: 45px 20px;
-    min-height: 200px;
+    padding: 40px 20px;
 }
-header h1 {
-    font-size: 32px;
+.header h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
-header p {
+.header p {
     font-size: 17px;
 }
-/*NAVIGATION - FLEXBOX*/
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--secondary-color);
-    padding: 15px 20px;
+.task-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
 }
-nav a {
-    width: 100%;
-    max-width: 250px;
-    color: var(--white);
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 12px;
-    border-radius: 5px;
-}
-nav a:hover {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-}
-/*MAIN AREA */
-main {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px 15px;
-}
-/* SECTIONS*/
-section {
-    background-color: var(--section-background);
-    padding: 25px 20px;
-    margin-bottom: 20px;
-    border: 1px solid var(--border-color);
+.task-form-section {
+    background-color: var(--white);
+    padding: 30px;
     border-radius: 12px;
+    box-shadow: 0 8px 20px var(--shadow);
+    margin-bottom: 25px;
 }
-section h2 {
-    color: var(--primary-color);
-    font-size: 24px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--accent-color);
+.task-form-section h2,
+.filter-section h2 {
+    margin-bottom: 20px;
 }
-section p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-/*SKILLS - CSS GRID*/
-#skills ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 15px;
-    list-style: none;
-}
-#skills li {
-    background-color: var(--skill-background);
-    border: 1px solid var(--accent-color);
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-}
-/*EDUCATION */
-article {
-    padding: 20px;
-    background-color: var(--background-color);
-    border-left: 5px solid var(--accent-color);
-    border-radius: 5px;
-}
-article h3 {
-    color: var(--primary-color);
-    margin-bottom: 8px;
-}
-/* CONTACT FORM - FLEXBOX*/
-form {
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto;
-}
-form p {
+#taskForm {
     display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-bottom: 18px;
+    gap: 12px;
 }
-label {
-    font-weight: bold;
-}
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--input-border);
+#taskInput {
+    flex: 1;
+    padding: 13px 15px;
+    border: 1px solid var(--border);
     border-radius: 6px;
-    font-family: inherit;
     font-size: 16px;
+    outline: none;
 }
-textarea {
-    resize: vertical;
+#taskInput:focus {
+    border-color: var(--primary);
 }
-input:focus,
-textarea:focus {
-    outline: 2px solid var(--accent-color);
-}
-/*  BUTTON  */
-button {
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--white);
+#addTaskBtn {
+    padding: 13px 22px;
     border: none;
-    padding: 13px 25px;
     border-radius: 6px;
+    background-color: var(--primary);
+    color: var(--white);
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
-button:hover {
-    background-color: var(--secondary-color);
+#addTaskBtn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
 }
-/*FOOTER */
-footer {
-    position: relative;
-    background-color: var(--secondary-color);
+#validationMessage {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.filter-section {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px var(--shadow);
+    margin-bottom: 25px;
+}
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    padding: 10px 18px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary);
     color: var(--white);
-    text-align: center;
-    padding: 25px 20px;
-    margin-top: 20px;
 }
-/*TABLET */
-@media (min-width: 768px) {
-    header {
-        padding: 55px 20px;
-    }
-    header h1 {
-        font-size: 38px;
-    }
-    nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    nav a {
-        width: auto;
-    }
-    main {
-        padding: 30px 20px;
-    }
-    section {
-        padding: 30px;
-        margin-bottom: 25px;
-    }
-    section h2 {
-        font-size: 27px;
-    }
-    #skills ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    button {
-        width: auto;
-    }
+.task-list-section {
+    margin-bottom: 40px;
 }
-/* DESKTOP  */
-@media (min-width: 1024px) {
-    header {
-        padding: 60px 20px;
-    }
-    header h1 {
-        font-size: 42px;
-    }
-    header p {
-        font-size: 19px;
-    }
-    nav {
-        gap: 25px;
-    }
-    #skills ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    section {
-        padding: 35px;
-    }
+
+#taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 50px;
 }
-/*WEEK 3 - PROJECT SHOWCASE  */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+.task-item {
+    background-color: var(--white);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px var(--task-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
-/* PROJECT CARD  */
-.project-card {
-    background: var(--glass-background);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--glass-border);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px var(--shadow-color);
-    text-align: center;
+.task-item.completed {
+    opacity: 0.65;
 }
-.project-card h3 {
-    margin-bottom: 15px;
-    font-size: clamp(20px, 3vw, 28px);
+.task-item.completed .task-text {
+    text-decoration: line-through;
 }
-.project-card p {
-    line-height: 1.7;
-    margin-bottom: 20px;
+.task-actions {
+    display: flex;
+    gap: 8px;
 }
-/*  PROJECT BUTTON  */
-.project-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--primary-color);
+.task-actions button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.complete-btn {
+    background-color: var(--success);
     color: var(--white);
-    text-decoration: none;
-    border-radius: 8px;
 }
-.project-btn:hover {
-    background-color: var(--secondary-color);
+.edit-btn {
+    background-color: var(--warning);
+    color: var(--white);
 }
-/*  MOBILE */
+.delete-btn {
+    background-color: var(--danger);
+    color: var(--white);
+}
+.task-actions button:hover {
+    transform: scale(1.05);
+}
+.footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    font-size: 14px;
+}
 @media (max-width: 600px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .header h1 {
+        font-size: 28px;
     }
-    .project-card {
-        padding: 20px;
+    .header p {
+        font-size: 15px;
     }
-}
-/* DARK MODE FOUNDATION  */
-.dark-mode {
-    background: #121212;
-    color: var(--white);
-}
-.dark-mode .project-card {
-    background: #1e1e1e;
-    color: var(--white);
-}
-.dark-mode .project-card p {
-    color: #dddddd;
+    .task-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+    #taskForm {
+        flex-direction: column;
+    }
+    #addTaskBtn {
+        width: 100%;
+    }
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-actions {
+        width: 100%;
+    }
+    .task-actions button {
+        flex: 1;
+    }
 }
