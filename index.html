@@ -3,98 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayesha Ahsan - Personal Profile</title>
+    <title>Task Manager | AUREX Week 4</title>
     <link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Ayesha Ahsan</h1>
-        <p>BS Information Technology Student</p>
+    <!-- Header -->
+    <header class="header">
+        <h1>Task Manager</h1>
+        <p>Manage your daily tasks easily</p>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#Projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                My Name is Ayesha Ahsan. I am a student in BS Information
-                Technology currently studying in the 7th semester.
-                I am interested in learning web development and improving
-                my technical skills.
-            </p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>MySQL</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <article>
-                <h3> BS Information Technology — University of the Punjab</h3>
-                <p>Currently studying in 7th semester</p>
-            </article>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>
-                I am a fresher and currently gaining experience through
-                my Full-Stack Engineering Internship.
-            </p>
-        </section>
-        <section id="Projects">
-    <h2>My Project</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>Lotus Garden Restaurant Website</h3>
-
-            <p>
-                A modern and responsive restaurant website designed to
-                showcase the restaurant, menu, gallery, and contact
-                information.
-            </p>
-
-            <a href="file:///C:/Users/Ayesha%20Ahsan/Documents/Lotus-Garden-Restaurant/index.html" class="project-btn">View Project</a>
-        </div>
-
-    </div>
-</section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </p>
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" cols="20"></textarea>
-                </p>
-                <button type="submit">send message</button>
+    <!-- Main Content -->
+    <main class="task-container">
+        <!-- Add Task Section -->
+        <section class="task-form-section">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                    required >
+                <button type="submit" id="addTaskBtn">
+                    Add Task
+                </button>
             </form>
+            <!-- Validation message will appear here -->
+            <p id="validationMessage"></p>
+        </section>
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <h2>My Tasks</h2>
+            <div class="filter-buttons">
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="all">
+                    All
+                </button>
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="active">
+                    Active
+                </button>
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="completed">
+                    Completed
+                </button>
+            </div>
+        </section>
+        <!-- Task List -->
+        <section class="task-list-section">
+            <div id="taskList">
+                <!-- Tasks will be added here using JavaScript -->
+            </div>
         </section>
     </main>
-    <footer>
-        <p>2026 Ayesha Ahsan.All right reserved</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>AUREX Full-Stack Engineering Internship — Week 4</p>
     </footer>
+    <!-- JavaScript -->
+    <script src="script/main.js"></script>
 </body>
 </html>
+
