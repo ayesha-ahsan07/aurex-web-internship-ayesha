@@ -1,66 +1,83 @@
-# AUREX Full-Stack Engineering Internship - Week 3
+# AUREX Full-Stack Engineering Internship - Week 4
 ## Intern Information
-**Name:** Ayesha Ahsan
-**Domain:** Full-Stack Engineering
-**Week:** Week 3
+**Name:** Ayesha Ahsan  
+**Domain:** Full-Stack Engineering  
+**Week:** Week 4
 ## Project
-Responsive Personal Portfolio with Interactive Project Showcase
-This project enhances my Week 2 personal portfolio with
-advanced CSS Grid, Flexbox, CSS animations, transitions,
-hover interactions, responsive design, and modern UI styling
-as part of Week 3 of the AUREX Full-Stack Engineering Internship.
-### CSS Grid
-CSS Grid is used for the Skills section and Project Showcase.
-The Project Showcase uses:
- `grid-template-columns`
- `repeat()`
- `auto-fit`
- `minmax()`
- Grid gap spacing
-The project cards automatically adjust according to the available screen width.
-- Mobile: 1 column
-- Tablet: responsive columns
-- Desktop: multiple columns
-## CSS Animations and Interactions
-The project includes CSS transitions, hover effects, and keyframe animations.
-Implemented interactions include:
-- Project card hover elevation
-- Smooth card movement using `transform`
-- Project button hover scaling
-- Button press effect using `:active`
-- Smooth color transitions
-- Page-load fade-in animation using `@keyframes`
-- Glassmorphism effect for project cards
-## Responsive and Performance Testing
-The website was tested on different screen sizes:
-- Desktop: Layout, navigation, project card, and animations work correctly.
-- Tablet: Content adjusts using responsive CSS and flexible grid layout.
-- Mobile: Project showcase changes to a single-column layout and remains readable.
-The use of CSS Grid, Flexbox, `auto-fit`, `minmax()`, and `clamp()` helps maintain a flexible and responsive interface.
-CSS animations and transitions were kept lightweight to maintain a smooth user experience.
-## Week 3 Feature Checklist
+### JavaScript Task Management Application
+This project is a responsive Task Management Application developed using HTML5, CSS3, and Vanilla JavaScript as part of Week 4 of the AUREX Full-Stack Engineering Internship.
 
--  Advanced CSS Grid layout
--  `auto-fit` and `minmax()` implemented
-- Flexbox layout
-- CSS transitions
-- Hover interactions
-- Keyframe fade-in animation
-- Project card elevation effect
-- Button scale and press effects
-- Glassmorphism UI effect
-- CSS variables
-- `clamp()` responsive typography
-- Mobile, tablet, and desktop responsiveness
-- Live deployment
+The application allows users to add, edit, delete, complete, and filter tasks. Task data is stored in the browser using localStorage, so tasks remain available after refreshing the page.
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- DOM Manipulation
+- JavaScript Events
+- localStorage
+- Responsive Web Design
+## Features
+- Add new tasks
+- Input validation
+- Complete and undo tasks
+- Edit existing tasks
+- Delete tasks
+- Filter tasks by:
+  - All
+  - Active
+  - Completed
+- Save tasks using localStorage
+- Retrieve tasks after page refresh
+- Responsive design for desktop and mobile
+- Interactive buttons and UI effects
+## JavaScript Concepts Practiced
+- Variables and constants
+- Arrays and objects
+- Functions
+- Conditional statements
+- Array methods such as `map()`, `filter()`, and `find()`
+- DOM selection and manipulation
+- Event listeners
+- Form submission
+- Event handling
+- Template literals
+- localStorage
+- JSON parsing and stringifying
+## Validation
+The application validates user input before adding or editing a task.
+If the input is empty, an error message is displayed and the task is not added.
+## Data Persistence
+Task data is stored in the browser using `localStorage`.
+The application can:
+- Save tasks
+- Retrieve saved tasks
+- Update tasks
+- Delete tasks
+- Maintain task data after refreshing the page
+## Responsive Testing
+The application was tested on:
+- Desktop
+- Tablet
+- Mobile
+The layout adjusts according to screen size using CSS media queries and flexible layouts.
+## Week 4 Feature Checklist
+- JavaScript fundamentals
+- DOM manipulation
+- Event handling
+- Add task functionality
+- Edit task functionality
+- Delete task functionality
+- Complete/Undo functionality
+- Task filtering
+- Input validation
+- localStorage implementation
+- Data persistence after refresh
+- Responsive design
+- GitHub Pages deployment
 - README documentation
-## Challenges
-The main challenges were implementing advanced CSS Grid layouts,
-adding smooth animations and transitions, and maintaining
-responsiveness across different screen sizes.
-I solved these challenges by using CSS Grid, Flexbox, CSS
-variables, media queries, `auto-fit`, `minmax()`, `clamp()`,
-transitions, and keyframe animations.
+## Challenges and Learning
+The main challenges were understanding DOM manipulation, handling user events, implementing task filtering, and storing task data using localStorage.
+I learned how JavaScript can dynamically update HTML content and respond to user interactions. I also learned how localStorage can be used to save and retrieve data in the browser.
 ## Live Deployment Link
-**Live URL:**https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
+**Live URL:**t https://ayesha-ahsan07.github.io/aurex-web-internship-ayesha/
 
