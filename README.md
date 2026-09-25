@@ -33,6 +33,7 @@ The application allows users to add, edit, delete, complete, and filter tasks. T
 ## JavaScript Concepts Practiced
 - Variables and constants
 - Arrays and objects
+- Loops
 - Functions
 - Conditional statements
 - Array methods such as `map()`, `filter()`, and `find()`
